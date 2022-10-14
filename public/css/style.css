@@ -1,0 +1,15 @@
+body{
+    text-align: center;
+    font-family: Arial;
+    background: #E2B5F8;
+}
+input{
+    background-color: #B1E6C4;
+    border-radius: 10px;
+}
+button{
+    width: 100px;
+    height: 20px;
+    background-color: #E8EAC6;
+    border-radius: 10px;
+}

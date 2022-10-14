@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Web site created using create-react-app"
+    />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/js.js"></script>
+    <title>conversor temperatura</title>
+  </head>
+  <body>
+    <h3>Conversor de Temperatura</h3>
+      <form action='#'>
+        <p>Seleccione la unidad de temperatura a ingresare</p>
+        <p><label>
+            <input type="radio" id="CI" name="temi" value="C"/><span>Celcius</span>
+        </label></p>
+        <p><label>
+            <input type="radio" id="KI" name="temi" value="K"/><span>Kelvin</span>
+        </label></p>
+        <p><label>
+            <input type="radio" id="FI" name="temi" value="F"/><span>Fahrenheit</span>
+        </label></p>
+
+        <label>Ingrese la temperatura a convetir: </label>
+        <input type="number" id="tempInic" step="any"></input>
+
+        <br></br>
+        <label>convetir a</label>
+        <br></br>
+
+        <label>seleccione la unidad a la que decea convertir</label>
+        <p><label>
+            <input type="radio" id="CF" name="temf" value="C"/><span>Celcius</span>
+        </label></p>
+        <p><label>
+            <input type="radio" id="KF" name="temf" value="K"/><span>Kelvin</span>
+        </label></p>
+        <p><label>
+            <input type="radio" id="FF" name="temf" value="F"/><span>Fahrenheit</span>
+        </label></p>
+
+        <Button onclick="convert();">Convertir</Button>
+
+        <div id="respuesta"></div>
+      </form>
+  </body>
+</html>
